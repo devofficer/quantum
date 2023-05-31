@@ -1,4 +1,4 @@
-export const calculatePositions = (collection, radius, insetFactor = 0.6) => {
+export const calculatePositions = (collection, radius, insetFactor = 0.75) => {
   const count = collection.length;
   const constant = (2 * Math.PI) / count;
 

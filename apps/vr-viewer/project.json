@@ -1,0 +1,84 @@
+{
+  "name": "vr-viewer",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/vr-viewer/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/vr-viewer",
+        "index": "apps/vr-viewer/src/public/index.html",
+        "baseHref": "/",
+        "main": "apps/vr-viewer/src/main.js",
+        "polyfills": "apps/vr-viewer/src/polyfills.js",
+        "tsConfig": "apps/vr-viewer/tsconfig.app.json",
+        "assets": [
+          "apps/vr-viewer/src/public/favicon.ico",
+          "apps/vr-viewer/src/assets"
+        ],
+        "styles": ["apps/vr-viewer/src/index.css"],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/vr-viewer/src/environments/environment.js",
+              "with": "apps/vr-viewer/src/environments/environment.prod.js"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/webpack:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "vr-viewer:build",
+        "hmr": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "vr-viewer:build:development"
+        },
+        "production": {
+          "buildTarget": "vr-viewer:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/vr-viewer/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/vr-viewer/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,4 +1,4 @@
-import { memo, useRef } from 'react';
+import { memo, Suspense, useRef } from 'react';
 import { useSpring, animated } from '@react-spring/three';
 import Quasar from './Quasar';
 import Gallery from './Gallery';
@@ -6,14 +6,6 @@ import useStore from '../store';
 import { MeshLine, MeshLineMaterial } from './MeshLine';
 import { extend } from '@react-three/fiber';
 import { PresentationControls, Shadow, useGLTF } from '@react-three/drei';
-import {
-  Selection,
-  Select,
-  EffectComposer,
-  Bloom,
-  Noise,
-} from '@react-three/postprocessing';
-import { BlurPass, Resizer, KernelSize } from 'postprocessing';
 import { SparkStorm } from './Sparks/SparkStorm';
 
 extend({ MeshLine, MeshLineMaterial });
@@ -25,11 +17,11 @@ const Experience = () => {
   const activeQuasar = useStore((state) => state.activeQuasar);
   const isDesktopMode = useStore((state) => state.isDesktopMode);
   const groupYPos = isDesktopMode ? 1.5 : 2;
-  const quasarModel = useGLTF(activeQuasar?.modelSrc);
+  const quasarModel = useGLTF(activeQuasar.modelSrc);
 
   const { groupPosition } = useSpring({
     groupPosition: isCaught
-      ? [0, groupYPos, isDesktopMode ? 0 : 0]
+      ? [0, groupYPos, isDesktopMode ? -1 : 0]
       : [0, groupYPos, -2],
   });
 
@@ -41,11 +33,7 @@ const Experience = () => {
       : isDesktopMode
       ? [0.5, 0.5, 0.5]
       : [0.7, 0.7, 0.7],
-    quasarPosition: isCaught
-      ? isDesktopMode
-        ? [0, -0.2, 0]
-        : [0, 0, 0]
-      : [0, 0, 0],
+    quasarPosition: isCaught ? [0, 0, 0] : [0, 0, 0],
     config: { mass: 0.7, tension: 200, friction: 20 },
   });
 
@@ -76,11 +64,9 @@ const Experience = () => {
           azimuth={[-Infinity, Infinity]}
           config={{ mass: 1, tension: 170, friction: 20 }}
         >
-          <animated.group scale={quasarScale} position={quasarPosition}>
-            <Select enabled>
-              <Quasar model={quasarModel} initialRotation={initialRotation} />
-            </Select>
-          </animated.group>
+          {/* <animated.group scale={quasarScale} position={quasarPosition}>
+            <Quasar model={quasarModel} initialRotation={initialRotation} />
+          </animated.group> */}
 
           <animated.group
             scale={sparkScale}
@@ -98,7 +84,7 @@ const Experience = () => {
           </animated.group>
         </PresentationControls>
       </animated.group>
-      <ambientLight intensity={0.5} />
+
       <Shadow position={[0, -2, -4]} color="black" opacity={0.75} scale={3} />
     </>
   );

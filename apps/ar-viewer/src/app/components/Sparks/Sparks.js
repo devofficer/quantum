@@ -61,5 +61,5 @@ export function Sparks({ count, colors, radius = 1 }) {
     [count, colors, radius],
   );
 
-  return lines;
+  return null;
 }

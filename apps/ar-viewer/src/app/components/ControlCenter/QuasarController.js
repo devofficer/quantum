@@ -43,7 +43,7 @@ const QuasarController = ({ XR8 }) => {
               id="dropdown-basic"
               size="sm"
             >
-              Exhibit {currentLevel + 1}
+              Layer {currentLevel + 1}
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
@@ -55,7 +55,7 @@ const QuasarController = ({ XR8 }) => {
                     currentLevel === activeQuasar.gallery.length - 1 - index
                   }
                 >
-                  Exhibit {activeQuasar.gallery.length - index}
+                  Layer {activeQuasar.gallery.length - index}
                 </Dropdown.Item>
               ))}
             </Dropdown.Menu>

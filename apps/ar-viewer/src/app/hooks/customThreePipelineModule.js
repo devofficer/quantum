@@ -1,18 +1,11 @@
-import { Scene, PerspectiveCamera, WebGLRenderer } from 'three';
-import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer';
-import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass';
-
-const customThreejsPipelineModule = () => {
+export const customThreejsPipelineModule = () => {
   let scene3;
-  let isSetup = false;
+  let engaged = false;
 
-  const xrScene = () => {
-    return scene3;
-  };
+  console.log('customThreejsPipelineModule');
 
-  const trySetup = ({ canvas, canvasWidth, canvasHeight, GLctx }) => {
-    console.log('Starting customThreejsPipelineModule...');
-    if (isSetup) {
+  const engage = ({ canvas, canvasWidth, canvasHeight, GLctx }) => {
+    if (engaged) {
       return;
     }
     const scene = new window.THREE.Scene();
@@ -31,28 +24,24 @@ const customThreejsPipelineModule = () => {
       antialias: true,
     });
     renderer.autoClear = false;
-    renderer.setClearAlpha(0.0);
     renderer.setSize(canvasWidth, canvasHeight);
-    const composer = new EffectComposer(renderer);
-    const renderPass = new RenderPass(scene, camera);
-    renderPass.clear = false;
-    renderPass.clearDepth = true;
-    composer.addPass(renderPass);
 
-    scene3 = { scene, camera, renderer, composer };
-    // Overwrite the default threejs getter in 8thwall so that you can get the effect composer as well
-    window.XR8.Threejs.xrScene = xrScene;
-    const e = new Event('customthreejsload');
-    document.dispatchEvent(e);
-    isSetup = true;
+    scene3 = { scene, camera, renderer };
+    engaged = true;
   };
+
+  // This is a workaround for https://bugs.webkit.org/show_bug.cgi?id=237230
+  // Once the fix is released, we can add `&& parseFloat(device.osVersion) < 15.x`
+  const device = window.XR8.XrDevice.deviceEstimate();
+  const needsPrerenderFinish =
+    device.os === 'iOS' && parseFloat(device.osVersion) >= 15.4;
 
   return {
     name: 'customthreejs',
-    onStart: (args) => trySetup(args),
-    onAttach: (args) => trySetup(args),
+    onStart: (args) => engage(args),
+    onAttach: (args) => engage(args),
     onDetach: () => {
-      isSetup = false;
+      engaged = false;
     },
     onUpdate: ({ processCpuResult }) => {
       const realitySource =
@@ -74,7 +63,13 @@ const customThreejsPipelineModule = () => {
       // Note: camera.projectionMatrixInverse wasn't introduced until r96 so check before setting
       // the inverse
       if (camera.projectionMatrixInverse) {
-        camera.projectionMatrixInverse.copy(camera.projectionMatrix).invert();
+        if (camera.projectionMatrixInverse.invert) {
+          // THREE 123 preferred version
+          camera.projectionMatrixInverse.copy(camera.projectionMatrix).invert();
+        } else {
+          // Backwards compatible version
+          camera.projectionMatrixInverse.getInverse(camera.projectionMatrix);
+        }
       }
 
       if (rotation) {
@@ -85,25 +80,28 @@ const customThreejsPipelineModule = () => {
       }
     },
     onCanvasSizeChange: ({ canvasWidth, canvasHeight }) => {
-      if (!isSetup) {
+      if (!engaged) {
         return;
       }
       const { renderer } = scene3;
       renderer.setSize(canvasWidth, canvasHeight);
     },
     onRender: () => {
-      // renderer.render(scene, camera)
-      scene3.composer.render();
+      const { scene, renderer, camera } = scene3;
+      renderer.clearDepth();
+      if (needsPrerenderFinish) {
+        renderer.getContext().finish();
+      }
+      renderer.render(scene, camera);
     },
     // Get a handle to the xr scene, camera and renderer. Returns:
     // {
     //   scene: The Threejs scene.
     //   camera: The Threejs main camera.
     //   renderer: The Threejs renderer.
-    //   composer: The Threejs effect composer
     // }
-    xrScene,
+    xrScene: () => {
+      return scene3;
+    },
   };
 };
-
-export default customThreejsPipelineModule;

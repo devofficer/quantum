@@ -7,19 +7,17 @@ import {
   dadrasAttractor,
   aizawaAttractor,
   arneodoAttractor,
-  // dequanAttractor,
+  dequanAttractor,
   lorenzAttractor,
   lorenzMod2Attractor,
 } from './attractor';
-import useStore from '../../store';
-import { useSpring, animated } from '@react-spring/three';
 
 const simulation = () =>
   Random.pick([
     dadrasAttractor,
     aizawaAttractor,
     arneodoAttractor,
-    // dequanAttractor,
+    dequanAttractor,
     lorenzAttractor,
     lorenzMod2Attractor,
   ]);
@@ -54,10 +52,8 @@ function StormLine({ radius, simulation, width, color }) {
   );
 }
 
-export function SparkStorm({ count, colors, radius = 0.3 }) {
-  const isDesktopMode = useStore((state) => state.isDesktopMode);
+export function SparkStorm({ count, colors, radius = 0.3, isDesktopMode }) {
   const width = isDesktopMode ? (0.001, 0.003) : (0.005, 0.01);
-  const [isLoaded, setIsLoaded] = useState(false);
   const lines = useMemo(
     () =>
       new Array(count).fill().map(() => {
@@ -72,21 +68,11 @@ export function SparkStorm({ count, colors, radius = 0.3 }) {
     [count, colors, width, radius],
   );
 
-  const { sparkScale } = useSpring({
-    sparkScale: isLoaded ? [1, 1, 1] : [0, 0, 0],
-  });
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoaded(true);
-    }, 1000);
-  }, []);
-
-  return isLoaded ? (
-    <animated.group scale={sparkScale}>
+  return (
+    <group>
       {lines.map((props, index) => (
         <StormLine key={index} {...props} />
       ))}
-    </animated.group>
-  ) : null;
+    </group>
+  );
 }

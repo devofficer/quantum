@@ -1,369 +1,231 @@
 {
   "id": "1",
-  "projectName": "Cyber Brokers",
-  "projectLogo": "",
-  "website": "",
+  "projectName": "Quantum Art",
+  "projectLogo": "https://i.imgur.com/9ZQZ1Zu.png",
+  "website": "https://quantum.art",
   "socials": {
-    "twitter": "cyber"
+    "twitter": "quantumnft"
   },
   "quasars": [
     {
-      "id": "CB-3",
-      "name": "Quasar #0157",
+      "id": "QA-001",
+      "project": "Quantum",
+      "name": "Quasar #2852",
       "description": "A short descriptor of the asset.",
-      "imageSrc": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/thumbnails/QUASAR_BATCH015_FRAME4271.jpg",
-      "modelSrc": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/models/compressed/QUASAR_BATCH015-Frame_0004271.glb",
+      "imageSrc": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/quantum/thumbnails/QUASAR_BATCH010_FRAME2852.jpg",
+      "modelSrc": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/quantum/models/compressed/QUASAR_BATCH010-Frame_0002852.glb",
       "geo": {
         "lat": 52.3309932,
         "lon": -1.2021426,
         "alt": 0
       },
-      "palette": ["#b2ed00", "#1b0f99", "#0f3d99", "#f0170c", "#9a17a6"],
+      "palette": [
+        "#3A7A9E",
+        "#CFA933",
+        "#AB2D21",
+        "#5F7B41",
+        "#E14759",
+        "#feff89"
+      ],
       "gallery": [
         {
-          "name": "Set",
+          "name": "Set 1",
           "assets": [
             {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/1.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Candy from Grawley",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
+              "url": "https://res.cloudinary.com/pulsar/image/upload/w_800,c_scale/61e17304ce6e109e2062b3e1/61e1752fce6e109e2062b414.jpg",
+              "title": "Anxious Pleasures - Amy Elkins",
+              "description": "For 377 consecutive days, from the day the lockdown started until Elkins received her COVID vaccine, she took one self portrait. The collection shows her whimsy, boredom, frustration and courage - and reflects what many around the world have felt over the past year.",
+              "externalLink": "https://quantum.art/collection/anxious-pleasures"
             },
             {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/2.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Zera from Tiny",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
+              "url": "https://res.cloudinary.com/pulsar/image/upload/w_800,c_scale/61e17305ce6e109e2062b3e4/61e17d0dce6e109e2062bd85.jpg",
+              "title": "The Rizzo Collection - Alberto Rizzo",
+              "description": "The Rizzo Collection by Alberto Rizzo is a 100 piece collection selected by the Rizzo family in concert with BeetsDAO to represent the best of his body of work. 2.5% of the primary sale will be donated to St. Jude's Hospital.",
+              "externalLink": "https://quantum.art/collection/rizzo-collection"
             },
             {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/3.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Conth Delectable Siohina",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
+              "url": "https://res.cloudinary.com/pulsar/image/upload/w_1000,c_scale,f_auto/61e17308ce6e109e2062b408/61e1a39741ad7b72b6cf98ee.jpg",
+              "title": "Privileged Mediocrity - Kris Graves",
+              "description": "Privileged Mediocrity by Kris Graves examines systemic unfairness in the United States. Represented by Sasha Wolf Projects.",
+              "externalLink": "https://quantum.art/collection/privileged-mediocrity"
+            },
+
+            {
+              "url": "https://res.cloudinary.com/pulsar/image/upload/w_800,c_scale/61fd038cc03c7476bec713f0/61fd03acc03c7476bec713f6.jpg",
+              "title": "Ethiopia - Joey L",
+              "description": "Joey L's Ethiopia is a monolithic collection made over the course of thirteen years. It is an ode to every region of the country and a celebration of all the unique peoples found within.",
+              "externalLink": "https://quantum.art/collection/ethiopia"
             },
             {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/4.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Jade Villanueva",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
+              "url": "https://res.cloudinary.com/pulsar/image/upload/w_800,c_scale/61e17306ce6e109e2062b3f0/61e194974b42af62e09ba273.jpg",
+              "title": "Homegrown - Julie Blackmon",
+              "description": "Blackmon carefully sets her scenes, but like film and theater directors, she is in pursuit of unscripted moments that provoke, disturb, and challenge the viewer.",
+              "externalLink": "https://quantum.art/collection/homegrown"
             },
             {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/5.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Nyx Conductive",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
+              "url": "https://res.cloudinary.com/pulsar/image/upload/w_800,c_scale/61e17306ce6e109e2062b3f3/61e196914b42af62e09ba466.jpg",
+              "title": "Touching Strangers - Richard Renaldi",
+              "description": "Touching Strangers embodies the human desire to connect despite our differences.",
+              "externalLink": "https://quantum.art/collection/touching-strangers"
             },
             {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/6.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Flounder Corwin",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
+              "url": "https://res.cloudinary.com/pulsar/image/upload/w_800,c_scale/61e17306ce6e109e2062b3f6/61e198b99caed2f671196cc6.jpg",
+              "title": "Bushes and Succulents - Mona Kuhn",
+              "description": "Bushes & Succulents is Mona Kuhn's celebration of the female essence - confident, raw and elegant, yet confrontational and unapologetic.",
+              "externalLink": "https://quantum.art/collection/bushes-and-succulents"
             },
             {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/7.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Zoya Banging",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
+              "url": "https://res.cloudinary.com/pulsar/image/upload/w_800,c_scale/61e17306ce6e109e2062b3f9/61e19c149caed2f671196f61.jpg",
+              "title": "Rumors of Arctic Belonging - Kiliii Yuyan",
+              "description": "The Arctic is changing radically. In his impressive series, Kiliii Yuyan offers insight into the fascinating imagery of the North.",
+              "externalLink": "https://quantum.art/collection/rumors-of-arctic-belonging"
             },
             {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/8.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Pulp Ryen",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
+              "url": "https://res.cloudinary.com/pulsar/image/upload/w_800,c_scale/61e17307ce6e109e2062b3fc/61e19d639caed2f671197118.jpg",
+              "title": "Miscommunicated Secrets - Mercedes Jelinek",
+              "description": "Miscommunicated Secrets began with obsessive tendencies—the need to make new things based on un-photographable feelings.",
+              "externalLink": "https://quantum.art/collection/miscommunicated-secrets"
             },
             {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/9.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Skull from Sparks",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
+              "url": "https://res.cloudinary.com/pulsar/image/upload/w_800,c_scale/61e17305ce6e109e2062b3ea/61e1906a2840864e7718295c.jpg",
+              "title": "New Yorkers - Sally Davies",
+              "description": "Davies started the New Yorkers by shifting from her usual view of the urban outdoors to the idea of chronicling the spaces and stories of the natives and transplants who give the city its particular vitality.",
+              "externalLink": "https://quantum.art/collection/new-yorkers"
             },
             {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/10.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Scenery Fibersmith",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
+              "url": "https://res.cloudinary.com/pulsar/image/upload/w_800,c_scale/61e17307ce6e109e2062b3ff/61e19df89caed2f671197203.jpg",
+              "title": "Divine - Delphine Diallo",
+              "description": "Delphine Diallo's intention is for every woman she photographs to feel the image she makes of them is a personal gift. “I am not taking pictures, I am giving pictures,” as Diallo puts it.",
+              "externalLink": "https://quantum.art/collection/divine"
             }
           ]
         }
       ]
     },
     {
-      "id": "CB-1",
-      "name": "Quasar #428",
+      "id": "QA-002",
+      "project": "Quantum",
+      "name": "Quasar #1650",
       "description": "A short descriptor of the asset.",
-      "imageSrc": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/thumbnails/QUASAR_BATCH015_FRAME4218.jpg",
-      "modelSrc": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/models/compressed/QUASAR_BATCH015-Frame_0004218.glb",
-      "initialRotation": [0, 180, 0],
+      "imageSrc": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/quantum/thumbnails/QUASAR_BATCH006_FRAME1650.jpg",
+      "modelSrc": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/quantum/models/compressed/QUASAR_BATCH006-Frame_0001650.glb",
       "geo": {
         "lat": 52.3309932,
         "lon": -1.2021426,
         "alt": 0
       },
-      "palette": ["#ba290f", "#c7a900", "#6e6c66"],
+      "palette": [
+        "#c06995",
+        "#de77c7",
+        "#df86df",
+        "#d998ee",
+        "#ceadf4",
+        "#c6bff9"
+      ],
       "gallery": [
         {
-          "name": "Set",
+          "name": "Set 1",
           "assets": [
             {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/1.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Candy from Grawley",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
+              "url": "https://res.cloudinary.com/pulsar/image/upload/w_512,c_scale,f_auto/620ed5ffe53d44b0aa16ab9a/620edb20e53d44b0aa16ace9.jpg",
+              "title": "ICONS - Parker Day",
+              "description": "Parker Day's ICONS invites us to approach identity with a sense of play and malleability, and to recognize the forgotten parts of ourselves as we see them reflected in these color-saturated portraits.",
+              "externalLink": "https://quantum.art/collection/icons"
             },
             {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/2.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Zera from Tiny",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
+              "url": "https://res.cloudinary.com/pulsar/image/upload/w_512,c_scale,f_auto/620ed5ffe53d44b0aa16ab9a/620ee3b6e53d44b0aa16aefd.jpg",
+              "title": "ICONS - Parker Day",
+              "description": "Parker Day's ICONS invites us to approach identity with a sense of play and malleability, and to recognize the forgotten parts of ourselves as we see them reflected in these color-saturated portraits.",
+              "externalLink": "https://quantum.art/collection/icons"
             },
             {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/3.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Conth Delectable Siohina",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
+              "url": "https://res.cloudinary.com/pulsar/image/upload/w_512,c_scale,f_auto/620ed5ffe53d44b0aa16ab9a/620ee196e53d44b0aa16ae41.jpg",
+              "title": "ICONS - Parker Day",
+              "description": "Parker Day's ICONS invites us to approach identity with a sense of play and malleability, and to recognize the forgotten parts of ourselves as we see them reflected in these color-saturated portraits.",
+              "externalLink": "https://quantum.art/collection/icons"
             },
             {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/4.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Jade Villanueva",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
+              "url": "https://res.cloudinary.com/pulsar/image/upload/w_512,c_scale,f_auto/620ed5ffe53d44b0aa16ab9a/620ee233e53d44b0aa16ae9d.jpg",
+              "title": "ICONS - Parker Day",
+              "description": "Parker Day's ICONS invites us to approach identity with a sense of play and malleability, and to recognize the forgotten parts of ourselves as we see them reflected in these color-saturated portraits.",
+              "externalLink": "https://quantum.art/collection/icons"
             },
             {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/5.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Nyx Conductive",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
+              "url": "https://res.cloudinary.com/pulsar/image/upload/w_512,c_scale,f_auto/620ed5ffe53d44b0aa16ab9a/62102bec1c5836e8ad377cd2.jpg",
+              "title": "ICONS - Parker Day",
+              "description": "Parker Day's ICONS invites us to approach identity with a sense of play and malleability, and to recognize the forgotten parts of ourselves as we see them reflected in these color-saturated portraits.",
+              "externalLink": "https://quantum.art/collection/icons"
             },
             {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/6.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Flounder Corwin",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
+              "url": "https://res.cloudinary.com/pulsar/image/upload/w_512,c_scale,f_auto/620ed5ffe53d44b0aa16ab9a/6215536c70ba939ed5452454.jpg",
+              "title": "ICONS - Parker Day",
+              "description": "Parker Day's ICONS invites us to approach identity with a sense of play and malleability, and to recognize the forgotten parts of ourselves as we see them reflected in these color-saturated portraits.",
+              "externalLink": "https://quantum.art/collection/icons"
             },
             {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/7.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Zoya Banging",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
+              "url": "https://res.cloudinary.com/pulsar/image/upload/w_512,c_scale,f_auto/620ed5ffe53d44b0aa16ab9a/620edb20e53d44b0aa16ace9.jpg",
+              "title": "ICONS - Parker Day",
+              "description": "Parker Day's ICONS invites us to approach identity with a sense of play and malleability, and to recognize the forgotten parts of ourselves as we see them reflected in these color-saturated portraits.",
+              "externalLink": "https://quantum.art/collection/icons"
             },
             {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/8.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Pulp Ryen",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
+              "url": "https://res.cloudinary.com/pulsar/image/upload/w_512,c_scale,f_auto/620ed5ffe53d44b0aa16ab9a/621558ea70ba939ed54526b2.jpg",
+              "title": "ICONS - Parker Day",
+              "description": "Parker Day's ICONS invites us to approach identity with a sense of play and malleability, and to recognize the forgotten parts of ourselves as we see them reflected in these color-saturated portraits.",
+              "externalLink": "https://quantum.art/collection/icons"
             },
             {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/9.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Skull from Sparks",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
+              "url": "https://res.cloudinary.com/pulsar/image/upload/w_512,c_scale,f_auto/620ed5ffe53d44b0aa16ab9a/6216b4fd43b7e15196b39900.jpg",
+              "title": "ICONS - Parker Day",
+              "description": "Parker Day's ICONS invites us to approach identity with a sense of play and malleability, and to recognize the forgotten parts of ourselves as we see them reflected in these color-saturated portraits.",
+              "externalLink": "https://quantum.art/collection/icons"
             },
             {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/10.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Scenery Fibersmith",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
+              "url": "https://res.cloudinary.com/pulsar/image/upload/w_512,c_scale,f_auto/620ed5ffe53d44b0aa16ab9a/6216b52743b7e15196b39935.jpg",
+              "title": "ICONS - Parker Day",
+              "description": "Parker Day's ICONS invites us to approach identity with a sense of play and malleability, and to recognize the forgotten parts of ourselves as we see them reflected in these color-saturated portraits.",
+              "externalLink": "https://quantum.art/collection/icons"
+            },
+            {
+              "url": "https://res.cloudinary.com/pulsar/image/upload/w_512,c_scale,f_auto/620ed5ffe53d44b0aa16ab9a/6216b52743b7e15196b39934.jpg",
+              "title": "ICONS - Parker Day",
+              "description": "Parker Day's ICONS invites us to approach identity with a sense of play and malleability, and to recognize the forgotten parts of ourselves as we see them reflected in these color-saturated portraits.",
+              "externalLink": "https://quantum.art/collection/icons"
+            },
+            {
+              "url": "https://res.cloudinary.com/pulsar/image/upload/w_512,c_scale,f_auto/620ed5ffe53d44b0aa16ab9a/6216b69043b7e15196b39996.jpg",
+              "title": "ICONS - Parker Day",
+              "description": "Parker Day's ICONS invites us to approach identity with a sense of play and malleability, and to recognize the forgotten parts of ourselves as we see them reflected in these color-saturated portraits.",
+              "externalLink": "https://quantum.art/collection/icons"
             }
           ]
         }
       ]
     },
     {
-      "id": "CB-2",
-      "name": "Quasar #0154",
+      "id": "QA-003",
+      "project": "Quantum",
+      "name": "Quasar #2682",
       "description": "A short descriptor of the asset.",
-      "imageSrc": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/thumbnails/QUASAR_BATCH015_FRAME4234.jpg",
-      "modelSrc": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/models/compressed/QUASAR_BATCH015-Frame_0004234.glb",
-      "initialRotation": [0, 180, 180],
+      "imageSrc": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/quantum/thumbnails/QUASAR_BATCH010_FRAME2862.jpg",
+      "modelSrc": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/quantum/models/compressed/QUASAR_BATCH010-Frame_0002862.glb",
       "geo": {
         "lat": 52.3309932,
         "lon": -1.2021426,
         "alt": 0
       },
-      "palette": ["#63056b", "#d15adb", "#d49ad9", "#4f4d4f"],
+
+      "palette": ["#f5d800", "#032185", "#EEEEEE", "#DCFA5C", "#ff002b"],
       "gallery": [
         {
-          "name": "Set",
+          "name": "Set 1",
           "assets": [
             {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/1.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Candy from Grawley",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
-            },
-            {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/2.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Zera from Tiny",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
-            },
-            {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/3.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Conth Delectable Siohina",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
-            },
-            {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/4.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Jade Villanueva",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
-            },
-            {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/5.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Nyx Conductive",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
-            },
-            {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/6.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Flounder Corwin",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
-            },
-            {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/7.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Zoya Banging",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
-            },
-            {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/8.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Pulp Ryen",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
-            },
-            {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/9.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Skull from Sparks",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
-            },
-            {
-              "url": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/cyber-brokers/gallery/10.svg",
-              "frame": {
-                "src": "https://storage.googleapis.com/assets.quasarsofficial.com/ar-demo/frahms/Ambience_Curio_Cards_black_gold-v1.glb",
-                "reTextureize": true
-              },
-              "title": "Cyber Brokers - Scenery Fibersmith",
-              "description": "CyberBrokers is a first-of-its-kind art collectibles ecosystem centered around 10,001 unique and on-chain CyberBroker NFTs.",
-              "externalLink": "https://opensea.io/assets/ethereum/0x73da73ef3a6982109c4d5bdb0db9dd3e3783f313/28"
+              "url": "https://res.cloudinary.com/pulsar/video/upload/w_600,c_scale/6290d320a42853a5f61f728a/629671569dc6cbfe50fb17ae.mp4",
+              "title": "ICONS - Parker Day",
+              "description": "Parker Day's ICONS invites us to approach identity with a sense of play and malleability, and to recognize the forgotten parts of ourselves as we see them reflected in these color-saturated portraits.",
+              "externalLink": "https://quantum.art/collection/icons",
+              "type": "video"
             }
           ]
         }
